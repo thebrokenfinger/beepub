@@ -1,0 +1,17 @@
+{
+  "name": "beepub",
+  "version": "0.0.1",
+  "description": "A simple plugin based library for creating EPUB files",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts"
+  },
+  "keywords": ["epub", "plugin", "library", "ebook", "typescript"],
+  "author": "Yatharth K",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.15.3",
+    "tsup": "^6.6.3",
+    "typescript": "^5.0.2"
+  }
+}
