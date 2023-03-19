@@ -4,14 +4,25 @@
   "description": "A simple plugin based library for creating EPUB files",
   "main": "index.js",
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts"
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc",
+    "ci": "npm run lint && npm run test && npm run build"
   },
-  "keywords": ["epub", "plugin", "library", "ebook", "typescript"],
+  "keywords": [
+    "epub",
+    "plugin",
+    "library",
+    "ebook",
+    "typescript"
+  ],
   "author": "Yatharth K",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^18.15.3",
     "tsup": "^6.6.3",
-    "typescript": "^5.0.2"
+    "typescript": "^5.0.2",
+    "vitest": "^0.29.3"
   }
 }
