@@ -1,6 +1,6 @@
 {
   "name": "beepub",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "description": "A simple plugin based library for creating EPUB files",
   "main": "./dist/index.js",
